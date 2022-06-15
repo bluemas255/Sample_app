@@ -6,6 +6,5 @@ Rails.application.routes.draw do
   get 'static_pages/about'
   # Defines the root path route ("/")
   # root "articles#index"
-  root 'application#hello'
+  root 'static_pages#home'
 end
-  
