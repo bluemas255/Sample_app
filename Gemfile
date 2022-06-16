@@ -74,3 +74,7 @@ end
 
 gem 'rubocop'
 
+
+gem "ruby-lsp", "~> 0.0.4", :group => :development
+
+gem 'bcrypt',               '3.1.7'
