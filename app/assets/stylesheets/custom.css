@@ -36,7 +36,6 @@ header {
   }
 
   h1 {
-    font-size: 3em;
     letter-spacing: -2px;
     margin-bottom: 30px;
     text-align: center;
@@ -75,6 +74,7 @@ header {
 
 
 
+
   footer {
     margin-top: 45px;
     padding-top: 5px;
@@ -103,3 +103,40 @@ header {
     float: left;
     margin-left: 15px;
   }
+
+
+  input, textarea, select, .uneditable-input {
+    border: 1px solid #bbb;
+    width: 100%;
+    margin-bottom: 15px;
+    @include box_sizing;
+  }
+
+  input {
+    height: auto !important;
+  }
+
+  .row1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+  /* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+
+
+#error_explanation {
+  color: red;
+}
+
