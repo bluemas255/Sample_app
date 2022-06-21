@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
 
+  before_action :find_user, only: :show
+
   def show
     @user = find_user
   end
