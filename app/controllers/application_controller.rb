@@ -1,8 +1,4 @@
 class ApplicationController < ActionController::Base
-    def home; end
-
-    def help; end
-
-    def about; end
-  
+  protect_from_forgery with: :exception
+  include SessionsHelper
 end

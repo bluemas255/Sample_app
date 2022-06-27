@@ -2,9 +2,18 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.0.2"
+# gem "byebug"
+gem "rails", "~> 6.1.5.1"
+gem 'bcrypt',               '3.1.7'
+# gem 'byebug'
+gem 'kaminari'
+gem 'ransack'
+gem 'bootstrap-kaminari-views'
+# gem 'faker',                '1.6.6'
 
-# Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.3"
+
+
+
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -45,6 +54,9 @@ gem "bootsnap", require: false
 # Use Sass to process CSS
 # gem "sassc-rails"
 
+gem 'jquery-rails'
+gem 'turbolinks'
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
@@ -66,7 +78,6 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem "byebug"
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
@@ -76,5 +87,3 @@ gem 'rubocop'
 
 
 gem "ruby-lsp", "~> 0.0.4", :group => :development
-
-gem 'bcrypt',               '3.1.7'
