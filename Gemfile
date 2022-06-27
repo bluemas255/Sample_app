@@ -2,10 +2,18 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.0.2"
-gem "byebug"
-gem "pry"
-# Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
+# gem "byebug"
 gem "rails", "~> 6.1.5.1"
+gem 'bcrypt',               '3.1.7'
+# gem 'byebug'
+gem 'kaminari'
+gem 'ransack'
+gem 'bootstrap-kaminari-views'
+# gem 'faker',                '1.6.6'
+
+
+
+
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -79,5 +87,3 @@ gem 'rubocop'
 
 
 gem "ruby-lsp", "~> 0.0.4", :group => :development
-
-gem 'bcrypt',               '3.1.7'
