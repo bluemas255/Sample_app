@@ -1,8 +1,10 @@
 class PasswordResetsController < ApplicationController
-  def new; end
+
   before_action :get_user, only: [:edit, :update]
   before_action :valid_user, only: [:edit, :update]
   before_action :check_expiration, only: [:edit, :update]
+
+  def new; end
 
   def create
     @user = User.find_by(email: params[:password_reset][:email].downcase)
